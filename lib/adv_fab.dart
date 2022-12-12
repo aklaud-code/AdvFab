@@ -351,8 +351,8 @@ class _AdvFabState extends State<AdvFab> with SingleTickerProviderStateMixin {
                                           },
                                         )
                                     ])
-                              : widget.useAsFloatingSpaceBar
-                                  ? widget.spaceBarWidget
+                              : widget.useAsFloatingSpaceBar && widget.spaceBarWidget != null
+                                  ? widget!.spaceBarWidget
                                   : widget.useAsFloatingActionButton
                                       ? Center(
                                           child: Icon(

@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'Push the button to expand or collapse',
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       mabialaFABController.setExpandedWidgetConfiguration(
                         showLogs: true,
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             useFloatingSpaceBar = true;
                             useAsFloatingActionButton = false;
@@ -135,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         width: 10,
                       ),
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             useFloatingSpaceBar = false;
                             useAsFloatingActionButton = true;
@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         width: 10,
                       ),
                       Expanded(
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             useFloatingSpaceBar = false;
                             useAsFloatingActionButton = false;
